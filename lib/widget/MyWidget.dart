@@ -8,7 +8,14 @@ class MyWidget extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<MyWidget> {
-  int counter = 0;
+  late int counter;
+
+
+  @override
+  void initState() {
+    super.initState();
+    counter = 0;
+  }
 
   @override
   Widget build(BuildContext context) {

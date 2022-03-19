@@ -1,6 +1,7 @@
 import 'package:date_time_picker/date_time_picker.dart';
 import 'package:first_app/generic/MyGenericClass.dart';
 import 'package:first_app/widget/MyWidget.dart';
+import 'package:first_app/widget/my_widget_stateful_update.dart';
 import 'package:first_app/widget/user_card.dart';
 import 'package:flutter/material.dart';
 
@@ -35,7 +36,9 @@ void main() {
   Widget app = MaterialApp(
     home: myWidget,
   );
-  runApp(app);
+
+  MyWidgetStatefulUpdate myWidgetStatefulUpdate = MyWidgetStatefulUpdate(first: 'first', second: 'second');
+  runApp(myWidgetStatefulUpdate);
 }
 
 class MyApp extends StatelessWidget {
