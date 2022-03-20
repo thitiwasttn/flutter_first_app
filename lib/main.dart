@@ -1,5 +1,8 @@
 import 'package:date_time_picker/date_time_picker.dart';
+import 'package:first_app/childpassvaluetoparent/my_parent_2.dart';
+import 'package:first_app/editStateFromChildWidget/app_2.dart';
 import 'package:first_app/generic/MyGenericClass.dart';
+import 'package:first_app/passvalueWidget/my_parent.dart';
 import 'package:first_app/widget/MyWidget.dart';
 import 'package:first_app/widget/my_widget_stateful_update.dart';
 import 'package:first_app/widget/user_card.dart';
@@ -33,12 +36,17 @@ void main() {
     userUrl: "https://picsum.photos/200/300",
   );
   MyWidget myWidget = MyWidget();
+  MyParent myParent = new MyParent();
   Widget app = MaterialApp(
     home: myWidget,
   );
 
-  MyWidgetStatefulUpdate myWidgetStatefulUpdate = MyWidgetStatefulUpdate(first: 'first', second: 'second');
-  runApp(myWidgetStatefulUpdate);
+  MyWidgetStatefulUpdate myWidgetStatefulUpdate =
+      MyWidgetStatefulUpdate(first: 'first', second: 'second');
+  /*runApp(MaterialApp(
+    home: MyParent2(),
+  ));*/
+  runApp(App2());
 }
 
 class MyApp extends StatelessWidget {
