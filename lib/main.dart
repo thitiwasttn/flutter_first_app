@@ -1,13 +1,17 @@
 import 'package:date_time_picker/date_time_picker.dart';
+import 'package:first_app/buttonNavigationBar/buttonNavigationBar.dart';
 import 'package:first_app/childpassvaluetoparent/my_parent_2.dart';
 import 'package:first_app/editStateFromChildWidget/app_2.dart';
 import 'package:first_app/generic/MyGenericClass.dart';
 import 'package:first_app/passvalueWidget/my_parent.dart';
+import 'package:first_app/tabToChange/form_screen.dart';
 import 'package:first_app/tabToChange/home_screen.dart';
 import 'package:first_app/widget/MyWidget.dart';
 import 'package:first_app/widget/my_widget_stateful_update.dart';
 import 'package:first_app/widget/user_card.dart';
 import 'package:flutter/material.dart';
+
+import 'buttonNavigationBar/HomeScreen2.dart';
 
 void main() {
   // runApp(const MyApp());
@@ -49,9 +53,16 @@ void main() {
   ));*/
   App2 app2 = App2();
 
+  // runApp(MaterialApp(
+  //   title: 'Navigator',
+  //   routes: {
+  //     '/': (context) => HomeScreen(),
+  //     '/formscreen': (context) => FormScreen(userId: "")
+  //   },
+  // ));
+
   runApp(MaterialApp(
-    home: HomeScreen(),
-    title: 'Navigator',
+    home: HomeScreen2(),
   ));
 }
 

@@ -38,6 +38,7 @@ class HomeScreen extends StatelessWidget {
           if (result != Null) {
             print('result $result');
           }
+
         },
         child: Center(
           child: Text('แตะหน้าจอสองครั้ง', style: TextStyle(fontSize: 30)),

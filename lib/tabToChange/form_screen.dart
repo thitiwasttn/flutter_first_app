@@ -8,6 +8,7 @@ class FormScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print('userID $userId');
     return Scaffold(
       appBar: AppBar(
         title: Text('Form Screen'),
