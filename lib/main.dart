@@ -3,6 +3,7 @@ import 'package:first_app/childpassvaluetoparent/my_parent_2.dart';
 import 'package:first_app/editStateFromChildWidget/app_2.dart';
 import 'package:first_app/generic/MyGenericClass.dart';
 import 'package:first_app/passvalueWidget/my_parent.dart';
+import 'package:first_app/tabToChange/home_screen.dart';
 import 'package:first_app/widget/MyWidget.dart';
 import 'package:first_app/widget/my_widget_stateful_update.dart';
 import 'package:first_app/widget/user_card.dart';
@@ -46,7 +47,12 @@ void main() {
   /*runApp(MaterialApp(
     home: MyParent2(),
   ));*/
-  runApp(App2());
+  App2 app2 = App2();
+
+  runApp(MaterialApp(
+    home: HomeScreen(),
+    title: 'Navigator',
+  ));
 }
 
 class MyApp extends StatelessWidget {
